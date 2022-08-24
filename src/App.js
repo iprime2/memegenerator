@@ -68,13 +68,13 @@ function App() {
       <section className='box--challenges'>{squareElements}</section>
       <Form />
       <PraticseForm />
-      */
+  */}
       <div className="container">
             <button onClick={toggle}>
                 Toggle WindowTracker
             </button>
             {show && <WindowTracker />}
-        </div>
+      </div>
     </div>
   );
 }
