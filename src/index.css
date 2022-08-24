@@ -34,7 +34,7 @@ code {
 .header--text{
   font-size: 1rem;
   line-height: 2px;
-  overflow-x: auto;
+  overflow-wrap: break-word;
 }
 
 .meme--main{
