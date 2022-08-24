@@ -4,8 +4,8 @@ import memeData from './memedata'
 export default function Meme(){
 
     const [memes, setMemes] = React.useState({
-        topText: '',
-        bottomText: '',
+        topText: 'Hello',
+        bottomText: 'Enter your text',
         ImageUrl: "https://i.imgflip.com/1g8my4.jpg"
     })
 
