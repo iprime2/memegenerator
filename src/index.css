@@ -34,19 +34,20 @@ code {
 .header--text{
   font-size: 1rem;
   line-height: 2px;
-  overflow-wrap:normal;
+  overflow-wrap: break-word;
 }
 
 .meme--main{
   max-width: 100%;
   height: fit-content;
+  padding: 5px;
 }
 
 .meme--form{
   max-width: 100%;
   margin-top: 30px;
   display: grid;
-  grid-template: 40px 40px / 1fr 1fr;
+  grid-template: 40px 40px / 0.3fr 0.3fr;
   gap: 15px;
 }
 
