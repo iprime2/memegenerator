@@ -69,12 +69,12 @@ function App() {
       <Form />
       <PraticseForm />
   */}
-      <div className="container">
+      {/*<div className="container">
             <button onClick={toggle}>
                 Toggle WindowTracker
             </button>
             {show && <WindowTracker />}
-      </div>
+</div>*/}
     </div>
   );
 }
