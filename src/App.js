@@ -61,7 +61,7 @@ function App() {
     <div className="App">
       <Header />
       <Meme />
-      <State />
+      {/*<State />
       <Things />
       <InfoCard />
       // box chanllenge dynamic styling
@@ -74,7 +74,7 @@ function App() {
                 Toggle WindowTracker
             </button>
             {show && <WindowTracker />}
-        </div>
+        </div>*/}
     </div>
   );
 }

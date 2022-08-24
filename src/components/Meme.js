@@ -3,7 +3,7 @@ import memeData from './memedata'
 
 export default function Meme(){
 
-    const [memes, getMemes] = React.useState({
+    const [memes, setMemes] = React.useState({
         topText: '',
         bottomText: '',
         ImageUrl: "https://i.imgflip.com/1g8my4.jpg"
@@ -17,14 +17,16 @@ export default function Meme(){
             const data = await res.json()
             setAllmeme(data.data.memes)
         }
+        getMemes()
     }, [])
-
+    console.log('sushil')
+    console.log(allmeme)
     //const [getMemeArray, setMemeArray] = useState(memeData)
 
     function getMemeImg(){
         const getRandomNumebr = Math.floor(Math.random() * allmeme.length)
         const url = allmeme[getRandomNumebr].url
-        getMemes(prevMemes => ({
+        setMemes(prevMemes => ({
             ...prevMemes,
             ImageUrl : url
         }))
@@ -33,7 +35,7 @@ export default function Meme(){
 
     function handleChange(event){
         const {name, value} = event.target
-        getMemes(prevAllmeme => ({
+        setMemes(prevAllmeme => ({
             ...prevAllmeme,
             [name] : value
         }))
@@ -57,7 +59,7 @@ export default function Meme(){
                     name="bottomText"
                     onChange={handleChange}
                     value={memes.bottomText}
-                /><br />
+                />
                 <button onClick={getMemeImg} type='button' className="meme--btn">GENERATE A NEW MEME</button>
             </div>
             <div className="meme">
