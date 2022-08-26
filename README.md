@@ -12,7 +12,7 @@ On clickling the buttom a new meme image is generated.
 
 All the data from api are stored in useState Array object from where url of image are extracted.
 
-Please feel free to visit my app.
+Please fell free to visit my app.
 
 https://fa5cf2d3fe4c-shared.lowcodeunit.com/
 
